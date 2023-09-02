@@ -1,68 +1,53 @@
-/* Apply some basic styles to the body and headers */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, p, form {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-/* Style the main container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+/* Apply a cream background color and center the content */
+body {
+    background-color: #f5f5dc;
+    font-family: Arial, sans-serif;
+    text-align: center;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the form */
-form {
+/* Style the container */
+h1 {
+    background-color: #ffaf40;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
-label {
+/* Style the navigation bar */
+.navbar {
+    background-color: #ffaf40;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
     display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Style the resume display */
-.resume {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Additional styling for links */
-a {
-    color: #007bff;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.navbar a:hover {
+    background-color: #ff8c00;
+}
+
+/* Style the content */
+.content {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
 }
