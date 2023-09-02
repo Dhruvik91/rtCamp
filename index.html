@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="navbar">
+        <a href="index.html"><img src="logo.png" alt="Your Logo"></a>
         <a href="index.html">Personal Info</a>
         <a href="education.html">Education</a>
         <a href="experience.html">Work Experience</a>
@@ -18,5 +19,21 @@
         <h1>Your Resume</h1>
         <p>Welcome to your resume page. Use the navigation bar above to view different sections of your resume.</p>
     </div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <div class="chat-output"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <div class="chatbot-icon">
+        <img src="imageforBot.png" alt="Chatbot Icon">
+    </div>
+
+    <!-- JavaScript for Chatbot -->
+    <script src="chatbot.js"></script>
 </body>
 </html>
