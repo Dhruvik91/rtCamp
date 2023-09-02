@@ -25,6 +25,7 @@ h1 {
 .navbar {
     background-color: #F5F7FA;;
     overflow: hidden;
+    height: 60px;
 }
 
 .navbar a {
@@ -32,12 +33,16 @@ h1 {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 22px 32px; /* Adjust the padding for more space */
     text-decoration: none;
 }
 
 .navbar a:hover {
     background-color: #ff8c00;
+}
+
+.navbar a:first-child {
+    padding-left: 40px; /* Add more padding to the left of the logo */
 }
 
 /* Style the content */
@@ -149,3 +154,10 @@ h1 {
 .chatbot-container.chatbot-visible {
     bottom: 20px; /* Move it up to show it */
 }
+
+/* Style the navigation bar */
+
+
+
+
+/* Style the logo */
