@@ -1,5 +1,8 @@
 /* Reset some default styles */
-body, h1, h2, p, form {
+
+h1, h2,
+p,
+form {
     margin: 0;
     padding: 0;
 }
@@ -10,45 +13,57 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 /* Style the container */
 h1 {
-    background-color: #ffaf40;
+    background-color: #e3e1df;
     color: black;
     padding: 10px 0;
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Style the navigation bar */
+
 .navbar {
-    background-color: #F5F7FA;;
+    background-color: #F5F7FA;
     overflow: hidden;
     height: 60px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    
+    
 }
-
-.navbar a {
-    float: left;
-    display: block;
+ .navbar a {
     color: black;
     text-align: center;
-    padding: 22px 32px; /* Adjust the padding for more space */
+    padding: 22px 72px;
     text-decoration: none;
+    
 }
 
 .navbar a:hover {
-    background-color: #ff8c00;
+    background-color: #e8e3df;
 }
 
-.navbar a:first-child {
-    padding-left: 40px; /* Add more padding to the left of the logo */
+.navbar img {
+
+    float: left; /* Float the logo to the left */
+    margin-right: 20px; /* Add some margin to separate the logo from other links */
+    text-decoration: none;
+   
 }
+
 
 /* Style the content */
 .content {
     text-align: left;
-    margin: 20px;
+    margin: 60px 20px 20px;
+    /* Adjust the top margin to create space */
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -113,7 +128,7 @@ h1 {
     background-color: #ff8c00;
 }
 
-/* ... (Your existing CSS rules) */
+
 
 /* Style the chatbot icon */
 .chatbot-icon {
@@ -141,18 +156,21 @@ h1 {
 /* Style the chatbot container */
 .chatbot-container {
     position: fixed;
-    bottom: -500px; /* Start with the chatbot hidden below the viewport */
+    bottom: -500px;
+    /* Start with the chatbot hidden below the viewport */
     right: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
-    transition: bottom 0.3s ease-in-out; /* Add smooth transition animation */
+    transition: bottom 0.3s ease-in-out;
+    /* Add smooth transition animation */
 }
 
 /* Show the chatbot container when it's visible */
 .chatbot-container.chatbot-visible {
-    bottom: 20px; /* Move it up to show it */
+    bottom: 20px;
+    /* Move it up to show it */
 }
 
 /* Style the navigation bar */

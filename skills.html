@@ -9,20 +9,27 @@
 </head>
 
 <body>
+
     <div class="navbar">
-        <a href="https://rtcamp.com/"><img src="imageforBot.png" alt="Logo"></a>
+        <div style="text-decoration-skip:  none;">
+            <a href="https://rtcamp.com/"><img src="imageforBot.png" alt="Logo"></a>
+        </div>
         <a href="index.html">Personal Info</a>
         <a href="education.html">Education</a>
         <a href="experience.html">Work Experience</a>
         <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
     </div>
+
+
+    <br>
+    <br>
 
     <div class="content">
-        <h1>Your Skills</h1>
-        <!-- Add your skills details here -->
-        <?php include(`./skills.php`); ?>
+        <h1>Skills</h1>
+        <!-- Include skills data from PHP file -->
+        <?php include('skills.php'); ?>
     </div>
-
 
     <!-- Chatbot Container -->
     <div class="chatbot-container">
