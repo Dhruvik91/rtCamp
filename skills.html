@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Skills</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <div class="navbar">
+        <a href="https://rtcamp.com/"><img src="imageforBot.png" alt="Logo"></a>
         <a href="index.html">Personal Info</a>
         <a href="education.html">Education</a>
         <a href="experience.html">Work Experience</a>
@@ -17,9 +20,12 @@
     <div class="content">
         <h1>Your Skills</h1>
         <!-- Add your skills details here -->
+        <?php include(`./skills.php`); ?>
     </div>
-     <!-- Chatbot Container -->
-     <div class="chatbot-container">
+
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
         <div class="chat-output"></div>
         <div class="chat-input">
             <input type="text" id="user-input" placeholder="Type your message...">
@@ -34,4 +40,5 @@
     <!-- JavaScript for Chatbot -->
     <script src="chatbot.js"></script>
 </body>
+
 </html>
