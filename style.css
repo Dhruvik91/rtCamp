@@ -72,7 +72,6 @@ h1 {
     margin: 0 auto;
 }
 
-/* ... (existing CSS rules) */
 
 /* Style the chatbot container */
 .chatbot-container {
@@ -151,31 +150,21 @@ h1 {
 }
 
 
-/* ... (your existing CSS rules) */
-
 /* Style the chatbot container */
 .chatbot-container {
     position: fixed;
     bottom: -500px;
-    /* Start with the chatbot hidden below the viewport */
     right: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     transition: bottom 0.3s ease-in-out;
-    /* Add smooth transition animation */
+    
 }
 
 /* Show the chatbot container when it's visible */
 .chatbot-container.chatbot-visible {
     bottom: 20px;
-    /* Move it up to show it */
+    
 }
-
-/* Style the navigation bar */
-
-
-
-
-/* Style the logo */
